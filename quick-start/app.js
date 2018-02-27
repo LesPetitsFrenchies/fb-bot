@@ -21,7 +21,7 @@
  */
 
 'use strict';
-const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+const PAGE_ACCESS_TOKEN = "EAAdSRRJWMP4BACifDjHuSYSuNBbCezyPma38CNj6UvQlajq48VKlnK2U5dHNYTMwzaFs1CXZCY3ZAXdCAk9dxRawto93nSOPBCg2vIql3g6ckP9zrYKJsnftD488pQAIfmC0sqR72Alyz6zVoB4shWtRTn47j9EjzZAPlhZA4gZDZD";
 // Imports dependencies and set up http server
 const 
   request = require('request'),
@@ -30,7 +30,7 @@ const
   app = express().use(body_parser.json()); // creates express http server
 
 // Sets server port and logs message on success
-app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
+app.listen(8069, () => console.log('webhook is listening'));
 
 // Accepts POST requests at /webhook endpoint
 app.post('/webhook', (req, res) => {  
